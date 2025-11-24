@@ -16,7 +16,7 @@ button {
 }
 
 #quote-button {
-  background-color: maroon;
+  background-color: rgb(128, 0, 119);
   color: whitesmoke;
 }
 
@@ -37,12 +37,23 @@ button {
   padding: 10px;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-btn {
+  background-color: rgb(57, 52, 52);
+  color: whitesmoke;
+  font-size: 16px;
+}
+
 .taylor {
-  background-color: #2B3F6E;
+  background-color: #2b6e54;
   color: whitesmoke;
 }
 
 .hater {
-  background-color: #822A3E;
+  background-color: #822a7e;
   color: whitesmoke;
 }
