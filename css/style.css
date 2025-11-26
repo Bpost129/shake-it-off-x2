@@ -1,3 +1,8 @@
+:root {
+  --cursive: "Dancing Script", cursive;
+  --serif: "Playfair Display", serif;
+}
+
 body {
   background-color: lightslategray;
   font-family: sans-serif;
@@ -51,9 +56,11 @@ footer {
 .taylor {
   background-color: #2b6e54;
   color: whitesmoke;
+  font-family: var(--cursive);
 }
 
 .hater {
   background-color: #822a7e;
   color: whitesmoke;
+  font-family: var(--serif);
 }
