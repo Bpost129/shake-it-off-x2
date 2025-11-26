@@ -3,8 +3,11 @@ import * as taylorAudio from './audio.js'
 
 const quotes = []
 
+const body = document.querySelector('body')
+const lightDarkBtn = document.querySelector('#light-dark-button')
 const quoteBtn = document.querySelector('#quote-button')
 const cardContainer = document.querySelector('#card-container')
+
 
 quoteBtn.addEventListener('click', createQuote)
 cardContainer.addEventListener('click', deleteQuote)
