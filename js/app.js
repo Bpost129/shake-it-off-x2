@@ -48,3 +48,12 @@ function deleteQuote(e) {
     render()
   }
 }
+
+function toggleLightDark() {
+  body.className = body.className === 'dark' ? '' : 'dark'
+  if (body.className === 'dark') {
+    taylorAudio.playDarkNight()
+  } else {
+    taylorAudio.playDaylight()
+  }
+}
