@@ -11,6 +11,10 @@ const cardContainer = document.querySelector('#card-container')
 
 quoteBtn.addEventListener('click', createQuote)
 cardContainer.addEventListener('click', deleteQuote)
+lightDarkBtn.addEventListener('click', toggleLightDark())
+
+checkDarkPref()
+
 
 function createQuote() {
   taylorAudio.playShakeItOff()
@@ -55,5 +59,14 @@ function toggleLightDark() {
     taylorAudio.playDarkNight()
   } else {
     taylorAudio.playDaylight()
+  }
+}
+
+function checkDarkPref() {
+  if (
+    window.matchMedia("(prefers-color-scheme:dark)").matches &&
+    body.className !== "dark"
+  ) {
+    toggleLightDark()
   }
 }
