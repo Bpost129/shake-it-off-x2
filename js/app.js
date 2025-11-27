@@ -11,7 +11,7 @@ const cardContainer = document.querySelector('#card-container')
 
 quoteBtn.addEventListener('click', createQuote)
 cardContainer.addEventListener('click', deleteQuote)
-lightDarkBtn.addEventListener('click', toggleLightDark())
+lightDarkBtn.addEventListener('click', toggleLightDark)
 
 checkDarkPref()
 
